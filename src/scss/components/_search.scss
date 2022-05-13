@@ -1,0 +1,31 @@
+@import '../abstracts/colors.scss';
+@import '../abstracts/breakpoints.scss';
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffff;
+  width: 65%;
+  height: 60px;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+  color: $lightGray;
+
+  input{
+      width: 82%;
+      height: 40px;
+      outline: none;
+      border: transparent;
+      color: $lightGray;
+  }
+  button{
+      width: 85px;
+      height: 32px;
+  }
+
+  
+  @include md{
+    width: 100%;
+  }
+}

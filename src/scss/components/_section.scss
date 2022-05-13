@@ -1,0 +1,69 @@
+@import "../../Global.scss";
+
+/************* Global *********************************/
+
+section {
+  background: #ffff;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  padding: 5px 0px 10px 20px;
+  margin-bottom: 30px;
+
+  /************* Nav Section ***************************/
+
+  .nav-section-container {
+    margin-left: -20px;
+    padding: 0;
+    li {
+      padding: 10px 25px;
+      margin: 10px 0px;
+      width: 100%;
+    }
+    li:hover {
+      background-color: $background-colour;
+    }
+    .active {
+      border-left: 4px solid $blue;
+      color: $blue;
+    }
+  }
+
+  /************* Trends ********************************/
+
+  /************ Who Follow ****************************/
+
+  .user-info-container {
+    position: relative;
+    @include center-items($justify: left);
+
+    padding: 10px;
+
+    img {
+      width: 45px;
+      height: 45px;
+      border-radius: 8px;
+      margin-right: 20px;
+      object-fit: cover;
+    }
+
+    p {
+      color: $black;
+      font-size: 12pt;
+      margin: 0 15px 0 0;
+    }
+    p:last-child {
+      color: $lightGray;
+      font-size: 10pt;
+    }
+  }
+
+  .description {
+    padding: 10px;
+    img {
+      width: 100%;
+      height: 90px;
+      border-radius: 8px;
+    }
+  }
+}

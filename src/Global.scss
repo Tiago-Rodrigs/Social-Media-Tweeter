@@ -1,0 +1,55 @@
+@import "./scss/abstracts/colors.scss";
+@import "./scss/abstracts/breakpoints.scss";
+
+hr {
+  background-color: rgba(0, 0, 0, 0.084);
+  height: 1px;
+  border: none; 
+}
+
+// hide menu
+.hide {
+  display: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $background-colour;
+}
+
+.container {
+  width: 75%;
+  margin: 40px auto;
+}
+
+.logo-container{
+  margin-left: 5%;
+}
+.logo {
+  width: 200px;
+  height: 32px;
+  background-image: url(../src/assets/tweeter.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@include md {
+  .logo {
+    background-image: url(../src/assets/tweeter-small.svg);
+  }
+}
+
+@include lg {
+  .container {
+    width: 90%;
+  }
+}
+
+// Align items to the center
+
+@mixin center-items($justify: center) {
+  display: flex;
+  align-items: center;
+  justify-content: $justify;
+}

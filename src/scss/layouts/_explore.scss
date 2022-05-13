@@ -1,0 +1,17 @@
+@import '../abstracts/breakpoints.scss';
+.explore {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+
+  aside {
+    position: absolute;
+    left: 0;
+    width: 30%;
+    @include md{
+      position: relative;
+      width: 100%;
+    }
+  }
+}

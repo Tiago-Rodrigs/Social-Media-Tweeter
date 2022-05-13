@@ -1,0 +1,45 @@
+@import "../../Global.scss";
+
+.modal {
+  position: fixed;
+  @include center-items;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.668);
+
+  a {
+    position: absolute;
+    text-align: right;
+    width: 100%;
+    height: 100%;
+    padding: 70px 90px;
+    font-size: 20pt;
+    z-index: 3;
+    border: 1px solid;
+    color: white;
+    cursor: pointer;
+  }
+
+  .modal-container {
+    background-color: #ffff;
+    border-radius: 8px;
+    width: 30%;
+    height: 500px;
+    padding: 30px;
+    z-index: 4;
+  }
+
+  @include lg{
+    .modal-container{
+      width: 50%;
+    }
+  }
+  @include md{
+    .modal-container{
+      width: 80%;
+    }
+
+  }
+}

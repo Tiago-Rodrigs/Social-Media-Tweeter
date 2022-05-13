@@ -1,0 +1,119 @@
+@import "../../Global.scss";
+@import "../abstracts/breakpoints.scss";
+.poster-container {
+  background-color: #ffff;
+  width: 65%;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+  
+
+
+  .user-info {
+    @include center-items($justify: left);
+    position: relative;
+
+    img {
+      width: 45px;
+      height: 45px;
+      border-radius: 8px;
+      margin-right: 20px;
+      object-fit: cover;
+    }
+    p {
+      color: $black;
+      font-size: 16pt;
+
+      margin: 5px;
+    }
+    p:last-child {
+      color: $lightGray;
+      font-size: 10pt;
+    }
+  }
+
+  .image-poster {
+    width: 100%;
+    height: 330px;
+    border-radius: 8px;
+    object-fit: fill;
+  }
+
+  .likes-comments-container {
+    display: flex;
+    justify-content: right;
+
+    text-align: right;
+    padding: 0;
+    p {
+      margin: 3px 10px;
+      color: $lightGray;
+    }
+  }
+
+
+  .actions-poster-container {
+    @include center-items($justify: space-around);
+    li,
+    i {
+      @include center-items($justify: center);
+      width: 20%;
+      border-radius: 8px;
+    }
+
+    li:hover {
+      background-color: #f2f2f2;
+    }
+  }
+
+  .comment-container {
+    @include center-items($justify: space-between);
+    img {
+      width: 45px;
+      border-radius: 8px;
+      margin-right: 20px;
+    }
+    input {
+      width: 100%;
+      height: 40px;
+      border-radius: 8px;
+      background-color: #f2f2f2;
+      outline: none;
+      border: 1px solid rgba(0, 0, 0, 0.062);
+      color: $lightGray;
+      padding-left: 10px;
+    }
+  }
+}
+
+@include md{
+  .poster-container{
+
+    width: 100%;
+
+    .image-poster {
+      width: 100%;
+      height: 192px;
+      border-radius: 8px;
+      object-fit: fill;
+    }
+
+    .actions-poster-container{
+      p{
+        display: none;
+      }
+      i{
+        padding: 15px;
+      }
+    }
+
+    .likes-comments-container {
+      
+      p {
+        font-size: 11px;
+      }
+    }
+  
+  }
+ 
+}

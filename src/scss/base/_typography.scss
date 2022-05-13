@@ -1,0 +1,25 @@
+@import '../abstracts/colors.scss';
+* {
+  box-sizing: border-box;
+  // font style
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+
+  /* identical to box height */
+  letter-spacing: -0.035em;
+}
+
+p,
+li,
+a,
+h1,
+h2,
+input {
+  color: $font-colour;
+  list-style: none;
+  text-decoration: none;
+}
