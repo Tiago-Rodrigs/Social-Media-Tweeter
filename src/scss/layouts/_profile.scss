@@ -122,25 +122,4 @@
   }
 }
 
-@include sm {
-  .user-info {
-    position: relative;
-    margin: 20px 0;
-    width: 400px;
 
-    img {
-      position: relative;
-      margin-top: -105px;
-      left: 0px;
-      height: 90px;
-      width: 90px;
-
-    }
-
-    .description {
-      margin: 10px 0;
-      width: 100%;
-      text-align: center;
-    }
-  }
-}
