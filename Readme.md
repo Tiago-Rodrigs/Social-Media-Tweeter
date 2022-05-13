@@ -17,7 +17,7 @@
 * REACT JS
 * ROUTER
 * WEBPACK
-* Axios
+* AXIOS
 * NODE JS
 * SASS
 * MONGODB
