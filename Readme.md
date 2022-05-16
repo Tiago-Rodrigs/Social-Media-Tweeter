@@ -2,12 +2,22 @@
 
 <p>This is a social media.</p>
 
-### Overview
+# Overview
 
 
 <img align="center" alt="tweeter clone"  src="./src/assets/tweeter-overview.png"/>
 
 <br>
+
+# Links
+
+   1 - [Github](https://github.com/Tiago-Rodrigs/Social-Media-Tweeter)
+
+   2 - [Live demo](https://social-media-twet.netlify.app/)
+   
+   3 - [Design](https://www.figma.com/proto/xxf4TG14lpF3vFUbBtEZUR/Tweeter?node-id=1%3A1016&scaling=scale-down-width&page-id=0%3A1)
+
+<br/>
 
 # Technologies
 
@@ -24,11 +34,7 @@
 * FONT AWESOME
 * GIT
 
-# Frontend routes
-
-* tweet.com/home
-* tweet.com/profile
-* tweet.com/login
+<br>
 
 # User can
 
@@ -65,21 +71,6 @@
 * User story(optional): I can search for a group
 
 
-# Colors
-
-background: #F2F2F2
-
-blue: #2F80ED
-
-white: #FFFFFF
-
-red: #EB5757
-
-green: #27AE60
-
-grey: #4F4F4F
-
-lightGray: #BDBDBD
 
 
 
