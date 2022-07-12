@@ -7,7 +7,7 @@ function Login(props) {
   return (
     <div>
       <Header/>
-      <Modal show={props.show}>
+      <div>
         <form className="login">
           <div className="logo"></div>
           <h1>Log in to Twitter</h1>
@@ -29,7 +29,7 @@ function Login(props) {
             <p>Sign to Twitter</p>
           </div>
         </form>
-      </Modal>
+      </div>
     </div>
   );
 }

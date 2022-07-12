@@ -7,10 +7,9 @@
   padding: 5px 20px;
   margin-bottom: 30px;
 
-  @include md{
+  @include md {
     width: 100%;
   }
-
 
   .text-container {
     display: flex;
@@ -29,6 +28,39 @@
     }
   }
 
+  .container-img-uploaded {
+    position: relative;
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+
+    .delete-image-icon::before {
+      background-color: rgba(0, 0, 0, 0.54);
+      padding: 3px 5px;
+      border-radius: 100%;
+      border: 1px solid #fff;
+    }
+    .delete-image-icon {
+      position: absolute;
+      right: -8px;
+      top: -8px;
+      color: #ffff;
+      z-index: 2;
+      font-size: 8pt;
+    }
+
+    img {
+      position: absolute;
+      object-fit: cover;
+      width: 50px;
+      height: 50px;
+      border-radius: 5px;
+      border: 0.5px solid rgba(0, 0, 0, 0.186);
+    }
+
+    
+  }
+
   .actions-container {
     @include center-items($justify: space-between);
 
@@ -36,6 +68,9 @@
       position: relative;
       @include center-items($justify: space-between);
       margin-left: 10%;
+      input {
+        display: none;
+      }
       i {
         margin-right: 15px;
         color: $blue;
@@ -79,12 +114,20 @@
           }
         }
       }
+
     }
 
     button {
       width: 80px;
       height: 30px;
       font-size: 12px;
+    }
+
+    @include sm{
+      .actions{
+        margin-left: 0;
+        padding: 10px;
+      }
     }
   }
 }
